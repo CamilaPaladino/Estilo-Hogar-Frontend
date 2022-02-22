@@ -1,0 +1,391 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.preHeader {
+    width: 100%;
+    height: 40px;
+    background-color: #f6a13b;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.preHeader a {
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+}
+
+.icons a {
+    font-size: 20px;
+    color: white;
+    padding-right: 5px;
+    margin: 0;
+    padding-left: 5px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 0 auto;
+}
+
+header a {
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+
+
+/*     navbar     */
+
+.menu {
+    width: 100%;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .30);
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.menu a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #7a7b7e;
+}
+
+.submenú a {
+    font-weight: 400;
+}
+
+.submenú a:hover {
+    font-weight: 600;
+}
+
+
+
+.buscador {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: 25px 25px 25px 25px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: rgb(112, 117, 122);
+
+}
+
+.buscador input {
+    height: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+.categorias .dropdown {
+    padding: 0px 15px;
+    display: flex;
+}
+
+/*     infoImportante     */
+
+.infoImportante {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+    justify-content: space-around;
+}
+
+
+
+
+/*     ofertasDestacadas     */
+
+.ofertasDestacadas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titulares {
+    font-size: 30px;
+    padding-left: 22px;
+    color: rgb(75, 79, 83);
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px 0px;
+}
+
+.card {
+    background-color: white;
+    height: 330px;
+    width: 220px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .25);
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .50);
+}
+
+.card:hover h3 {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.card img {
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    color: rgb(96, 100, 104);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    color: rgb(75, 79, 83);
+    font-weight: 700;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.ajustePrecio {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 40px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.ajustePrecio p {
+    color: rgb(96, 100, 104);
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.ajustePrecio h5 {
+    color: white;
+    background-color: #f6a13b;
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+
+
+
+/*     banners categorias destacadas     */
+
+.banners {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 25px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin: 40px 25px;
+}
+
+
+.carrouselCategorias {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.carrouselContenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carrouselContenedor a {
+    height: 360px;
+    width: 360px;
+    margin: 20px;
+}
+
+
+/*     footer    */
+
+.newsletter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f6a13b;
+    padding-top: 15px;
+    color: white;
+}
+
+.news1 {
+    width: 270px;
+}
+
+.news1 h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.news1 p {
+    font-size: 15px;
+}
+
+.news2 {
+    margin-top: 35px;
+    height: 105px;
+    display: flex;
+    align-content: center;
+}
+
+.news2 input {
+    height: 40px;
+    width: 300px;
+    border: 1px solid #c3c5c9;
+}
+
+.news2 button{
+    height: 40px;
+    width: 40px;
+    border: #c3c5c9;;
+    background-color:#c3c5c9;
+    color: #7a7b7e;
+}
+
+#button-up {
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    background:  white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .45);
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 65px;
+    right:45px;
+    cursor:pointer;
+    transition: all 300ms ease;
+    transform: scale(0) ;
+}
+
+#button-up:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////     PAG CATEGORIAS      ////////////////////*/
+
+.scaffolding {
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.scaffolding a {
+    color: #7a7b7e;
+}
+
+.categoriaCompleta {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.filtrado {
+    width: 280px;
+    height: auto;
+    margin-left: 25px;
+}
+.accordion-item {
+    border: none;
+}
+.filtrado button {
+    font-weight: 400;
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+}
+
+.filtradoCategoria {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtrado a{
+    color: #7a7b7e;
+}
+
+.filtrado a:hover {
+    font-weight: 600;
+}
+
+.filtradoMarca label{
+    color: #7a7b7e;
+}
+
+.contenedorCardCategoria {
+    width: 1000px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.contenedorCardCategoria .card {
+    margin-bottom: 50px;
+    margin-right: 80px;
+}
