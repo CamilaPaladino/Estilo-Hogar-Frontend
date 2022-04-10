@@ -1,117 +1,225 @@
- <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>Estilo Hogar, todo lo que necesitas para hacer de una casa, TU HOGAR</title>
+
+        <!--Favicon-->
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon-8.png" alt="favicon-8" />
+        
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--CSS-->
         <link rel="stylesheet" href="css/style.css">
+        
+        <!--ÍCONOS-->
         <script src="https://kit.fontawesome.com/7a27d4ce79.js" crossorigin="anonymous"></script>
+        
+        <!--GOOGLE FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+        
+        <!--SHARE FACEBOOK-->
+        <meta property="og:title" content="Estilo Hogar, todo lo que necesitas para hacer de una casa, TU HOGAR">
+        <meta property="og:description" content="Estilo Hogar, es una empresa familiar destinada a ofrecerte todo lo que necesitas para 
+        hacer de una casa TU HOGAR. Te ofrecemos todo en electrodomésticos (Refrigeración, Calefacción, Lavado, Pequeños electrodomésticos), 
+        Muebles y decoración (para cada espacio de tu hogar) y todo en Blanquería.">
+        <meta property="og:type" content="Tienda">
+        <meta property="og:image" content="assets/img/logo.svg">
+        
+        <!--SHARE TWITTER-->
+        <meta property="twitter:title" content="Estilo Hogar, todo lo que necesitas para hacer de una casa, TU HOGAR">
+        <meta property="twitter:description" content="Estilo Hogar, es una empresa familiar destinada a ofrecerte todo lo que necesitas para 
+        hacer de una casa TU HOGAR. Te ofrecemos todo en electrodomésticos (Refrigeración, Calefacción, Lavado, Pequeños electrodomésticos), 
+        Muebles y decoración (para cada espacio de tu hogar) y todo en Blanquería.">
+        <meta property="twitter:type" content="Tienda">
+        <meta property="twitter:image" content="assets/img/logo.svg">
+        
+        <!--METAS-->
+        <meta name="description" content="Estilo Hogar, es una empresa familiar destinada a ofrecerte todo lo que necesitas para 
+        hacer de una casa TU HOGAR. Te ofrecemos todo en electrodomésticos (Refrigeración, Calefacción, Lavado, Pequeños electrodomésticos), 
+        Muebles y decoración (para cada espacio de tu hogar) y todo en Blanquería.">
+        <meta name="keywords" content="Hogar, Casa, Electrodomésticos, Electrónica, Tecnología, Lavado, Refrigeración, Muebles, Blanquería,  Venta, 
+        Sábanas, Acolchados, Cortinas, Cocina, Aire Libre">
+        <meta property="og:title" content="Estilo Hogar">
+        <meta property="og:description" content="Todo lo que necesitas para hacer de una casa, TU HOGAR">
     </head>
 
     <body>
-
         <section class="preHeader">
             <div class="redes">
-                <a href=""><i class="fa-brands fa-whatsapp"></i> CONTACTANOS!</a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-facebook-square"></i></a>
             </div>
 
             <div class="icons">
-                <a href=""><i class="fa-solid fa-user"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                        class="fa-solid fa-user"></i></a>
+                <a href="" type="button"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <!--Modal Login-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modalTitulo" id="exampleModalLabel">INGRESA</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <input type="email" placeholder="Ingresá tu email">
+                                <input type="email" placeholder="Ingresá tu Contraseña">
+                            </form>
+                            <div>
+                                <a href="">Olvidé mi clave</a>
+                                <button type="button" class="btnModal">INGRESO</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p>¿No estás registrado? <a href="" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">Crea tu cuenta aquí</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal Register-->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modalTitulo" id="exampleModalLabel">REGISTRO</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <p>*Completa todos los campos</p>
+                                <input type="text" placeholder="Nombre">
+                                <input type="text" placeholder="Apellido">
+                                <input type="email" placeholder="Email">
+                                <input type="email" placeholder="Contraseña">
+                            </form>
+                            <div>
+                                <button type="button" class="btnModal center">CREAR CUENTA</button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <p>¿Ya tienes una cuenta? <a href=" type=" button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Ingresa aquí</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <header>
             <a href=""><img src="assets/img/logo.svg" alt=""></a>
-            <div class="Navbar-container menu">
-                <nav class="navbar navbar-expand-md">
-                    <div class="container-fluid">
-                        <ul class="navbar-nav categorias">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    ELECTRODOMÉSTICOS
-                                </a>
-                                <ul class="dropdown-menu submenú" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="Electrodomesticos.html">Tecnología</a></li>
-                                    <li><a class="dropdown-item" href="Electrodomesticos.html">Refrigeración</a></li>
-                                    <li><a class="dropdown-item" href="Electrodomesticos.html">Calefacción</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="Electrodomesticos.html">Termotanques/Calefones</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="Electrodomesticos.html">Cocinas/hornos</a></li>
-                                    <li><a class="dropdown-item" href="Electrodomesticos.html">Pequeños cocina</a></li>
-                                    <li><a class="dropdown-item" href="Electrodomesticos.html">Lavado</a></li>
-                                    <li><a class="dropdown-item" href="Electrodomesticos.html">Pequeños hogar</a></li>
-                                    <li><a class="dropdown-item" href="Electrodomesticos.html">Electro Beauty</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider ">
-                                    </li>
-                                    <li><a class="dropdown-item" href="Electrodomesticos.html">Ver toda la categoría</a>
-                                    </li>
-                                </ul>
+            <nav class="menu">
+                <button class="open-menu" aria-label="Abrir menú" alt="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+                <ul class="categorias">
+                    <button class="cerrar-menu" alt="Abrir menú">x</i></button>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ELECTRODOMÉSTICOS
+                        </a>
+                        <ul class="dropdown-menu submenú" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Tecnología</a></li>
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Audio</a></li>
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Refrigeración</a></li>
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Calefacción</a></li>
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Termotanques/Calefones</a></li>
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Cocinas/hornos</a></li>
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Pequeños cocina</a></li>
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Lavado</a></li>
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Pequeños hogar</a></li>
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Electro Beauty</a></li>
+                            <li>
+                                <hr class="dropdown-divider ">
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">MUEBLES Y DECO
-                                </a>
-                                <ul class="dropdown-menu submenú" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="Muebles.html">Cocina</a></li>
-                                    <li><a class="dropdown-item" href="Muebles.html">Baño y Lavadero</a></li>
-                                    <li><a class="dropdown-item" href="Muebles.html">Colchones</a></li>
-                                    <li><a class="dropdown-item" href="Muebles.html">Dormitorio</a></li>
-                                    <li><a class="dropdown-item" href="Muebles.html">Juegos de Comedor</a></li>
-                                    <li><a class="dropdown-item" href="Muebles.html">Living</a></li>
-                                    <li><a class="dropdown-item" href="Muebles.html">Muebles TV/Racks</a></li>
-                                    <li><a class="dropdown-item" href="Muebles.html">Organizadores</a></li>
-                                    <li><a class="dropdown-item" href="Muebles.html">Oficina</a></li>
-                                    <li><a class="dropdown-item" href="Muebles.html">Jardín</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="Muebles.html">Ver toda la categoría</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    BLANQUERÍA
-                                </a>
-                                <ul class="dropdown-menu submenú" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="Blanqueria.html">Cover/Cubrecamas</a></li>
-                                    <li><a class="dropdown-item" href="Blanqueria.html">Frazadas</a></li>
-                                    <li><a class="dropdown-item" href="Blanqueria.html">Acolchados</a></li>
-                                    <li><a class="dropdown-item" href="Blanqueria.html">Sábanas</a></li>
-                                    <li><a class="dropdown-item" href="Blanqueria.html">Toallones</a></li>
-                                    <li><a class="dropdown-item" href="Blanqueria.html">Cortinas</a></li>
-                                    <li><a class="dropdown-item" href="Blanqueria.html">Protectores</a></li>
-                                    <li><a class="dropdown-item" href="Blanqueria.html">Almohadas</a></li>
-                                    <li><a class="dropdown-item" href="Blanqueria.html">Respasadores</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="Blanquería.html">Ver toda la categoría</a></li>
-                                </ul>
+                            <li><a class="dropdown-item" href="Electrodomesticos.html">Ver más</a>
                             </li>
                         </ul>
-                        <div class="buscador">
-                            <input type="text" placeholder="Buscá tu producto">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">MUEBLES Y DECO
+                        </a>
+                        <ul class="dropdown-menu submenú" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Muebles.html">Cocina</a></li>
+                            <li><a class="dropdown-item" href="Muebles.html">Baño y Lavadero</a></li>
+                            <li><a class="dropdown-item" href="Muebles.html">Colchones</a></li>
+                            <li><a class="dropdown-item" href="Muebles.html">Dormitorio</a></li>
+                            <li><a class="dropdown-item" href="Muebles.html">Juegos de Comedor</a></li>
+                            <li><a class="dropdown-item" href="Muebles.html">Living</a></li>
+                            <li><a class="dropdown-item" href="Muebles.html">Muebles TV/Racks</a></li>
+                            <li><a class="dropdown-item" href="Muebles.html">Oficina</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="Muebles.html">Ver más</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            AIRE LIBRE
+                        </a>
+                        <ul class="dropdown-menu submenú" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="AireLibre.html">Camping</a></li>
+                            <li><a class="dropdown-item" href="AireLibre.html">Recreación</a></li>
+                            <li><a class="dropdown-item" href="AireLibre.html">Bicicletas</a></li>
+                            <li><a class="dropdown-item" href="AireLibre.html">Piletas</a></li>
+                            <li><a class="dropdown-item" href="AireLibre.html">Termos</a></li>
+                            <li><a class="dropdown-item" href="AireLibre.html">Juegos de mate</a></li>
+                            <li><a class="dropdown-item" href="AireLibre.html">Muebles de Jardín</a></li>
+                            <li><a class="dropdown-item" href="AireLibre.html">Herramientas de Jardín</a></li>
+                            <li>
+                                <hr class="dropdown-divider ">
+                            </li>
+                            <li><a class="dropdown-item" href="AireLibre.html">Ver más</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            BLANQUERÍA Y COLCHONERÍA
+                        </a>
+                        <ul class="dropdown-menu submenú" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Blanqueria.html">Cover/Cubrecamas</a></li>
+                            <li><a class="dropdown-item" href="Blanqueria.html">Frazadas</a></li>
+                            <li><a class="dropdown-item" href="Blanqueria.html">Acolchados</a></li>
+                            <li><a class="dropdown-item" href="Blanqueria.html">Colchones</a></li>
+                            <li><a class="dropdown-item" href="Blanqueria.html">Sábanas</a></li>
+                            <li><a class="dropdown-item" href="Blanqueria.html">Toallones</a></li>
+                            <li><a class="dropdown-item" href="Blanqueria.html">Cortinas</a></li>
+                            <li><a class="dropdown-item" href="Blanqueria.html">Protectores</a></li>
+                            <li><a class="dropdown-item" href="Blanqueria.html">Almohadas</a></li>
+                            <li><a class="dropdown-item" href="Blanqueria.html">Respasadores</a></li>
+                            <li><a class="dropdown-item" href="Blanqueria.html">Bebés y Niños</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="Blanquería.html">Ver más</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="buscador">
+                    <input type="text" placeholder="Buscá tu producto">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </nav>
         </header>
 
         <section class="scaffolding">
@@ -273,7 +381,6 @@
 
 
 
-
         <footer>
             <div class="newsletter">
                 <div class="news1">
@@ -286,7 +393,35 @@
                 </div>
             </div>
 
-            <p>faltan cosas del footer como links a informacion, direccion, etc</p>
+            <div class="linkFooter">
+                <div>
+                    <h2>ESTILO HOGAR</h2>
+                    <p>2923 57-0358</p>
+                    <p>Humberto Primo y Palacios</p>
+                    <p>Puan, Buenos Aires, Argentina</p>
+                    <a href="https://www.google.com.ar/maps/place/Estilo+Hogar/@-37.5446436,-62.7682001,17z/data=!3m1!4b1!4m5!3m4!1s0x95ebd9d9320e1765:0x93e10ed63667cc3e!8m2!3d-37.5446479!4d-62.7660114"
+                        target="_blank">Ver ubicación</a>
+                </div>
+                <div>
+                    <h2>CATEGORÍAS</h2>
+                    <a href="">Electrodomesticos</a>
+                    <a href="">Muebles y Deco</a>
+                    <a href="">Aire Libre</a>
+                    <a href="">Blanqueria</a>
+                </div>
+                <div>
+                    <h2>ATENCIÓN AL CLIENTE</h2>
+                    <a href="">Preguntas Frecuentes</a>
+                    <a href="">Cómo comprar</a>
+                    <a href="">Formas de envío</a>
+                    <a href="">Cambios y devoluciones</a>
+                </div>
+                <div>
+                    <h2>NOSOTROS</h2>
+                    <a href="">Quienes somos</a>
+                    <a href="">Contacto</a>
+                </div>
+            </div>
 
             <div id="button-up">
                 <i class="fa-solid fa-angle-up"></i>

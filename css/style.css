@@ -1,3 +1,25 @@
+/* ÍNDICE SECCIONES:
+1- PÁGINA INDEX: linea 32
+    MODAL LOGIN/REGISTER: linea 88
+    NAVBAR: linea 176
+    INFO IMPORTANTE: linea 266
+    OFERTAS DESTACADAS: linea 275
+    BANNERS CATEGORÍAS DESTACADAS: linea 361
+    FOOTER: linea 399
+
+2- PÁGINA CATEGORÍAS: linea 508
+
+3- PÁGINA PRODUCTO: linea 574
+
+4- PÁGINA CONTACTO: linea 725
+
+5- PÁGINA PREGUNTAS FRECUENTES: linea 789
+
+6- PÁGINA CARGAR PRODUCTO API: linea 816
+
+7- MEDIA QUERIES: linea 875
+:*/
+
 body {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
@@ -36,6 +58,19 @@ a {
     padding-left: 5px;
 }
 
+.icons button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icons button:hover {
+    background-color: transparent;
+    border: none;
+}
+
 header {
     width: 100%;
     height: auto;
@@ -52,22 +87,130 @@ header a {
     padding: 15px;
 }
 
+/*     MODAL LOGIN / REGISTER     */
 
+.modal-content {
+    width: 400px;
+    margin: 0 auto;
+    z-index: 5000;
+}
 
+.modal-header {
+    background-color: #f6a13b;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    margin-bottom: 5px;
+}
 
-/*     navbar     */
+.modalTitulo {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal form p {
+    color: #7a7b7e;
+}
+
+.modal-body input {
+    border: #7a7b7e solid 1px;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 15px;
+    width: 300px;
+}
+
+.btnModal {
+    background-color: #f6a13b;
+    border: none;
+    color: white;
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 35px;
+    margin-bottom: 15px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.modal-body div {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-body a {
+    font-size: 13px;
+    color: #7a7b7e;
+    text-decoration: underline;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer p {
+    font-size: 13px;
+    color: #7a7b7e;
+}
+
+.modal-footer a {
+    text-decoration: underline;
+    color: #7a7b7e;
+    padding: 2px;
+}
+
+/*     NAVBAR      */
 
 .menu {
     width: 100%;
+    height: 60px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, .30);
     margin-top: 20px;
     margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 0 auto;
 }
 
 .menu a {
     font-size: 15px;
     font-weight: 600;
     color: #7a7b7e;
+}
+
+.nav-item {
+    width: auto;
+    margin: 0;
+    padding: 0px 6px !important;
+}
+
+.nav-link {
+    margin: 0;
+    width: auto;
+    padding: 0px 6px;
 }
 
 .submenú a {
@@ -77,8 +220,6 @@ header a {
 .submenú a:hover {
     font-weight: 600;
 }
-
-
 
 .buscador {
     width: 400px;
@@ -106,6 +247,24 @@ header a {
     display: flex;
 }
 
+.open-menu {
+    border: none;
+    background-color: transparent;
+    color: #4b4f53;
+    display: none;
+}
+
+.cerrar-menu {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 600;
+    color: #4b4f53;
+    display: flex;
+    margin-left: 250px;
+    display: none;
+}
+
 /*     infoImportante     */
 
 .infoImportante {
@@ -114,9 +273,6 @@ header a {
     padding: 20px 0px;
     justify-content: space-around;
 }
-
-
-
 
 /*     ofertasDestacadas     */
 
@@ -204,9 +360,6 @@ header a {
     font-weight: 600;
 }
 
-
-
-
 /*     banners categorias destacadas     */
 
 .banners {
@@ -256,6 +409,8 @@ header a {
     background-color: #f6a13b;
     padding-top: 15px;
     color: white;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .news1 {
@@ -284,19 +439,54 @@ header a {
     border: 1px solid #c3c5c9;
 }
 
-.news2 button{
+.news2 button {
     height: 40px;
     width: 40px;
-    border: #c3c5c9;;
-    background-color:#c3c5c9;
+    border: #c3c5c9;
+    ;
+    background-color: #c3c5c9;
     color: #7a7b7e;
+}
+
+.linkFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 90px;
+    padding-bottom: 60px;
+    background-color: #e6e6e6;
+}
+
+.linkFooter div {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+.linkFooter h2 {
+    font-size: 16px;
+    color: #4b4f53;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.linkFooter p,
+.linkFooter a {
+    margin-bottom: 2px;
+    color: #4b4f53;
+    font-size: 14px;
+}
+
+.linkFooter a:hover {
+    text-decoration: underline;
 }
 
 #button-up {
     z-index: 5;
     width: 50px;
     height: 50px;
-    background:  white;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,10 +496,10 @@ header a {
     font-size: 20px;
     position: fixed;
     bottom: 65px;
-    right:45px;
-    cursor:pointer;
+    right: 45px;
+    cursor: pointer;
     transition: all 300ms ease;
-    transform: scale(0) ;
+    transform: scale(0);
 }
 
 #button-up:hover {
@@ -317,22 +507,10 @@ header a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*/////////////////     PAG CATEGORIAS      ////////////////////*/
 
 .scaffolding {
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: 25px;
+    margin: 40px 40px 20px 40px;
 }
 
 .scaffolding a {
@@ -344,14 +522,17 @@ header a {
     flex-direction: row;
     width: 100%;
 }
+
 .filtrado {
     width: 280px;
     height: auto;
     margin-left: 25px;
 }
+
 .accordion-item {
     border: none;
 }
+
 .filtrado button {
     font-weight: 400;
     font-size: 15px;
@@ -364,7 +545,7 @@ header a {
     flex-direction: column;
 }
 
-.filtrado a{
+.filtrado a {
     color: #7a7b7e;
 }
 
@@ -372,28 +553,23 @@ header a {
     font-weight: 600;
 }
 
-.filtradoMarca label{
+.filtradoMarca label {
     color: #7a7b7e;
 }
 
 .contenedorCardCategoria {
-    width: 1000px;
+    width: 100vw;
     margin-left: 50px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
 .contenedorCardCategoria .card {
-    margin-bottom: 50px;
-    margin-right: 80px;
+    margin: 15px;
+    justify-self: flex-start;
 }
-
-
-
-
-
 
 
 
@@ -402,10 +578,10 @@ header a {
 .productoGeneral {
     display: flex;
     margin: 15px 25px;
-
+    justify-content: space-around;
 }
 
-.precioProducto{
+.precioProducto {
     display: flex;
     flex-direction: column;
 }
@@ -414,8 +590,6 @@ header a {
     display: flex;
     border-bottom: solid 1px #d0d1d4;
     margin-bottom: 15px;
-
-    
 }
 
 .titularProducto {
@@ -430,12 +604,12 @@ header a {
 }
 
 .titularProducto h3 {
-    font-size:30px;
+    font-size: 30px;
     font-weight: 600;
     color: rgb(75, 79, 83);
 }
 
-.precioProducto2 h4{
+.precioProducto2 h4 {
     color: rgb(112, 117, 122);
     text-decoration: line-through;
     font-size: 20px;
@@ -469,7 +643,7 @@ header a {
     margin-bottom: 10px;
 }
 
-.contBtnInfo{
+.contBtnInfo {
     display: flex;
     width: 500px;
     margin-top: 20px;
@@ -481,7 +655,7 @@ header a {
     align-content: center;
 }
 
-.btnInfo i{
+.btnInfo i {
     color: rgb(163, 168, 173);
     font-size: 30px;
     padding-right: 15px;
@@ -504,16 +678,16 @@ header a {
     text-decoration: underline;
 }
 
-.descriptionProducto{
+.descriptionProducto {
     margin: 0px 40px 100px 40px;
 }
-.titularDescrip{
-    border-bottom: solid 1px #d0d1d4;
+
+.titularDescrip {
     margin-bottom: 20px;
     margin-top: 45px;
 }
 
-.titularDescrip h2{
+.titularDescrip h2 {
     font-size: 30px;
     color: rgb(75, 79, 83);
     font-weight: 600;
@@ -526,7 +700,7 @@ header a {
 }
 
 .especificaciones {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -549,4 +723,901 @@ header a {
     font-size: 15px;
     color: rgb(75, 79, 83);
 
+}
+
+
+/* PÁGINA CONTACTO*/
+
+.form {
+    min-height: calc(100vh - 350px);
+}
+
+.titularContacto {
+    margin: 45px 40px 10px 20px;
+}
+
+.titularContacto div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titularContacto aside {
+    width: 50%;
+    margin: 15px 15px 15px 0px;
+}
+
+.titularContacto aside p {
+    font-size: 20px;
+}
+
+.titularContacto h2 {
+    font-size: 30px;
+    color: rgb(75, 79, 83);
+    font-weight: 600;
+}
+
+.formContacto {
+    width: 50%;
+    margin: 15px 15px 15px 0px;
+}
+
+.formContacto input {
+    margin-bottom: 12px;
+    border: #7a7b7e solid 1px;
+    height: 30px;
+    font-size: 15px;
+    width: 400px;
+}
+
+.formContacto textarea {
+    margin-bottom: 12px;
+    border: #7a7b7e solid 1px;
+    height: 80px;
+    font-size: 15px;
+    width: 400px;
+}
+
+.btnFormContacto {
+    background-color: #f6a13b;
+    border: none;
+    color: white;
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 35px;
+    margin-bottom: 15px;
+    width: 140px;
+}
+
+/* PÁGINA PREGUNTAS FRECUENTES*/
+
+.preguntas {
+    width: 100%;
+}
+
+.preguntas .accordion {
+    width: 80%;
+    margin: 25px 20px 25px 30px;
+}
+
+
+.preguntas .accordion-button {
+    color: #4b4f53;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 2px solid (75, 79, 83);
+}
+
+.preguntas .accordion-button:not(.collapsed){
+    background-color: rgba(122, 123, 126, 0.2);
+    border-bottom: none;
+}
+
+
+
+/*/////////////////     CARGAR NUEVO PRODUCTO      ////////////////////*/
+
+.formAPI {
+    margin: 40px;
+    display: flex;
+}
+
+.formAPI input,
+.formAPI textarea {
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #4b4f53;
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 4px;
+    border-bottom: #4b4f53 solid 0.8px;
+}
+
+form section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+form,
+aside {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+form h3,
+aside h3 {
+    color: #4b4f53;
+    font-size: 18px;
+}
+
+aside button {
+    background-color: #7a7b7e;
+    border: none;
+    width: auto;
+    color: white;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 35px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+aside div {
+    margin-bottom: 40px;
+}
+
+
+
+/*/////////////////     MEDIA QUERIES      ////////////////////*/
+
+@media screen and (max-width: 1024px) {
+
+    /*INDEX*/
+    .titUno {
+        margin-top: 100px;
+    }
+
+    .cardContainer {
+        justify-content: space-around;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    /*NAV RESPONSIVE*/
+    .preHeader {
+        position: fixed;
+        top: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 40px;
+    }
+
+    header a img {
+        display: none;
+    }
+
+    .categorias {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 10px;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 300px;
+        height: 500px;
+        overflow-y: auto;
+        background-color: white;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, .30);
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+    }
+
+    .nav-link {
+        line-height: 50px;
+    }
+
+    .submenú {
+        width: 300px;
+        justify-content: center;
+        border: none;
+        padding-left: 10px;
+        padding-top: 0;
+    }
+
+    .menu {
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: fixed;
+        top: 40px;
+        margin-top: 0;
+    }
+
+    .open-menu {
+        display: flex;
+    }
+
+    .cerrar-menu {
+        display: flex;
+    }
+
+
+    .nav-menu-visible {
+        opacity: 1;
+        pointer-events: visible;
+    }
+
+
+    /*SECCIÓN PRODUCTO*/
+    .scaffolding {
+        margin-top: 140px;
+    }
+
+    .imgProducto img {
+        width: 400px;
+    }
+
+    .titularProducto {
+        width: 400px;
+    }
+
+    .titularProducto h2 {
+        font-size: 18px;
+    }
+
+    .titularProducto h3 {
+        font-size: 25px;
+    }
+
+    .precioProducto2 h4 {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    .precioProducto2 p {
+        font-size: 12px;
+    }
+
+    .pagos button {
+        width: 140px;
+        font-size: 15px;
+    }
+
+    .pagos a {
+        margin-bottom: 10px;
+    }
+
+    .contBtnInfo {
+        width: 400px;
+    }
+
+    .btnInfo {
+        width: auto;
+        margin-right: 15px;
+    }
+
+    .btnInfo i {
+        padding-right: 5px;
+    }
+
+    .btnInfo p {
+        font-size: 12px;
+    }
+
+    .btnInfo a {
+        font-size: 11px;
+    }
+
+    /* PÁGINA CONTACTO*/
+
+    .titularContacto {
+        margin: 120px 40px 10px 20px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+
+    /*INDEX*/
+    .titulares {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .cardContainer .card {
+        width: 180px;
+        height: 280px;
+    }
+
+    .cardContainer .card h3 {
+        font-size: 13px;
+    }
+
+    .cardContainer .card h4 {
+        font-size: 18px;
+    }
+
+    .cardContainer .card p {
+        font-size: 12px;
+    }
+
+    .cardContainer .card h5 {
+        font-size: 11px;
+    }
+
+    /*SECCIÓN PRODUCTO*/
+    .imgProducto img {
+        width: 300px;
+    }
+
+    .titularProducto {
+        width: 300px;
+    }
+
+    .pagos img {
+        display: none;
+    }
+
+    .titularDescrip h2 {
+        font-size: 20px;
+    }
+
+    .descriptionProducto p {
+        font-size: 14px;
+    }
+
+    .itemEspecific h5 {
+        font-size: 14px;
+    }
+
+    .itemEspecific h4 {
+        font-size: 14px;
+    }
+
+    .contBtnInfo {
+        width: 300px;
+    }
+
+
+
+    /*SECCIÓN CATEGORÍA*/
+    .filtrado {
+        width: 200px;
+        height: auto;
+        margin-left: 25px;
+    }
+
+    .accordion-button {
+        margin-bottom: 0;
+    }
+
+    .accordion-item {
+        font-size: 13px;
+    }
+
+    .contenedorCardCategoria .card {
+        width: 180px;
+        height: 280px;
+    }
+
+    .contenedorCardCategoria .card h3 {
+        font-size: 13px;
+    }
+
+    .contenedorCardCategoria .card h4 {
+        font-size: 18px;
+    }
+
+    .contenedorCardCategoria .card p {
+        font-size: 12px;
+    }
+
+    .contenedorCardCategoria .card h5 {
+        font-size: 11px;
+    }
+
+    /* PÁGINA CONTACTO*/
+
+    .titularContacto h2 {
+        font-size: 20px;
+    }
+
+    .titularContacto aside {
+        margin: 10px 10px 10px 0px;
+    }
+
+    .titularContacto aside p {
+        font-size: 15px;
+    }
+
+    .formContacto {
+        width: 50%;
+        margin: 15px 15px 15px 0px;
+    }
+
+    .formContacto input {
+        margin-bottom: 12px;
+        border: #7a7b7e solid 1px;
+        height: 30px;
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .formContacto textarea {
+        margin-bottom: 12px;
+        border: #7a7b7e solid 1px;
+        height: 80px;
+        font-size: 15px;
+        width: 300px;
+    }
+
+    /* PÁGINA PREGUNTAS FRECUENTES*/
+    .preguntas {
+        padding-top: 25px;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+
+    /*INDEX*/
+
+    /*FOOTER*/
+    .news1 h3 {
+        font-size: 20px;
+    }
+
+    .news1 p {
+        font-size: 13px;
+    }
+
+    .news2 input {
+        height: 30px;
+        width: 200px;
+    }
+
+    .news2 button {
+        height: 30px;
+        width: 30px;
+    }
+
+    .linkFooter {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .linkFooter h2 {
+        font-size: 14px;
+    }
+
+    .linkFooter p,
+    .linkFooter a {
+        font-size: 12px;
+    }
+
+    #button-up {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+
+    /*SECCIÓN PRODUCTO*/
+    .productoGeneral {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titularProducto {
+        width: 100%;
+    }
+
+    .pagos img {
+        display: block;
+    }
+
+    .contBtnInfo {
+        width: 350px;
+    }
+
+    .scaffolding a {
+        font-size: 15px;
+    }
+
+    /* PÁGINA CONTACTO*/
+
+    .titularContacto {
+        margin: 120px 15px 15px 25px;
+        justify-items: center;
+    }
+
+    .titularContacto div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .titularContacto aside {
+        width: 100%;
+        text-align: center;
+    }
+
+    .formContacto {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    /*INDEX*/
+    .cardContainer .card {
+        width: 160px;
+        height: 240px;
+        margin: 10px;
+    }
+
+    .cardContainer .card h3 {
+        font-size: 11px;
+    }
+
+    .cardContainer .card h4 {
+        font-size: 15px;
+    }
+
+    .cardContainer .card p {
+        font-size: 11px;
+    }
+
+    .cardContainer .card h5 {
+        font-size: 10px;
+    }
+
+    /*MODAL LOGIN / REGISTER*/
+
+    .modal-content {
+        width: 240px;
+        margin: 0 auto;
+        z-index: 5000;
+    }
+
+    .modal-header {
+        background-color: #f6a13b;
+        padding: 10px;
+        display: flex;
+        align-content: center;
+        margin-bottom: 0px;
+    }
+
+    .modalTitulo {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .modal-body form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+
+    .modal form p {
+        color: #7a7b7e;
+    }
+
+    .modal-body input {
+        border: #7a7b7e solid 1px;
+        margin-bottom: 20px;
+        height: 30px;
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .btnModal {
+        background-color: #f6a13b;
+        border: none;
+        color: white;
+        padding: 7px;
+        font-size: 15px;
+        border-radius: 35px;
+        margin-bottom: 15px;
+    }
+
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .modal-body div {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .modal-body a {
+        font-size: 13px;
+        color: #7a7b7e;
+        text-decoration: underline;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .modal-footer p {
+        font-size: 13px;
+        color: #7a7b7e;
+    }
+
+    .modal-footer a {
+        text-decoration: underline;
+        color: #7a7b7e;
+        padding: 2px;
+    }
+
+    /*SECCIÓN PRODUCTO*/
+    .scaffolding a {
+        font-size: 12px;
+    }
+
+    .pagos a img {
+        display: none;
+    }
+
+    .contBtnInfo {
+        width: 160px;
+    }
+
+    .btnInfo {
+        max-width: 250px;
+    }
+
+    .btnInfo i {
+        font-size: 20px;
+        padding-right: 5px;
+    }
+
+    .btnInfo p {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .btnInfo a {
+        font-size: 13px;
+        text-decoration: underline;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /*SECCIÓN CATEGORÍA*/
+    .categoriaCompleta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filtrado img {
+        display: none;
+    }
+
+    .contenedorCardCategoria {
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    .contenedorCardCategoria .card {
+        width: 160px;
+        height: 240px;
+        margin: 10px;
+    }
+
+    .contenedorCardCategoria .card h3 {
+        font-size: 11px;
+    }
+
+    .contenedorCardCategoria .card h4 {
+        font-size: 15px;
+    }
+
+    .contenedorCardCategoria .card p {
+        font-size: 11px;
+    }
+
+    .contenedorCardCategoria .card h5 {
+        font-size: 10px;
+    }
+
+    /* PÁGINA CONTACTO*/
+
+    .titularContacto {
+        margin: 120px 15px 15px 25px;
+        justify-items: center;
+    }
+
+    .titularContacto div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .titularContacto aside {
+        width: 100%;
+        text-align: center;
+    }
+
+    .formContacto {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* PÁGINA PREGUNTAS FRECUENTES*/
+    .preguntas .accordion-button {
+        color: #4b4f53;
+        font-weight: 400;
+        font-size: 15px;
+        border-bottom: 2px solid (75, 79, 83);
+        padding: 10px 14px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    /*INDEX*/
+    .cardContainer .card {
+        width: 120px;
+        height: 240px;
+        margin: 10px;
+    }
+
+    .cardContainer .ajustePrecio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cardContainer .card p {
+        margin-bottom: 0;
+    }
+
+    .cardContainer .descuento {
+        width: 80px;
+        margin-top: 5px;
+    }
+
+
+
+    /*NAV RESPONSIVE*/
+    .nav-item a {
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+
+    /*FOOTER*/
+    .news1 {
+        width: 180px;
+        margin-top: 15px;
+    }
+
+    .news1 h3 {
+        font-size: 20px;
+    }
+
+    .news1 p {
+        font-size: 12px;
+    }
+
+    .news2 {
+        margin-top: 15px;
+        display: flex;
+    }
+
+    .news2 input {
+        height: 30px;
+        width: 150px;
+        font-size: 12px;
+        border: 1px solid #c3c5c9;
+    }
+
+    .news2 button {
+        height: 30px;
+        width: 30px;
+    }
+
+
+    /*SECCIÓN PRODUCTO*/
+    .pagos div {
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+    }
+
+    .pagos a img {
+        display: none;
+    }
+
+    .imgProducto img {
+        width: 200px;
+    }
+
+    .btnInfo {
+        min-width: 150px;
+    }
+
+    .btnInfo i {
+        font-size: 20px;
+        padding-right: 5px;
+        margin-bottom: 8px;
+    }
+
+    .btnInfo p {
+        font-size: 11px;
+        line-height: 9px;
+    }
+
+    .btnInfo a {
+        font-size: 10px;
+        text-decoration: underline;
+    }
+
+
+    /*SECCIÓN CATEGORÍA*/
+    .contenedorCardCategoria .card {
+        width: 120px;
+        height: 240px;
+        margin: 10px;
+    }
+
+    .contenedorCardCategoria .ajustePrecio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenedorCardCategoria .card p {
+        margin-bottom: 0;
+    }
+
+    .contenedorCardCategoria .descuento {
+        width: 80px;
+        margin-top: 5px;
+    }
+
+    /* PÁGINA CONTACTO*/
+
+    .titularContacto h2{
+        font-size: 18px;
+    }
+
+    .titularContacto aside p{
+        font-size: 14px;
+    }
+
+    .formContacto input, .formContacto textarea {
+        width: 250px;
+    }
+    
 }
